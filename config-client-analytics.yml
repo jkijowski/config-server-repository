@@ -5,7 +5,7 @@ server:
 
 analytics-service:
   version: v2
-  custom-audience: analytics-service
+#  custom-audience: analytics-service
 
 #spring:
 #  security:
