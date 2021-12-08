@@ -74,3 +74,9 @@ retry-config:
   multiplier: 2.0
   maxAttempts: 3
   sleep-time-ms: 10000
+
+# for simplicity
+user-config: #test/test
+  username: test
+  password: '{cipher}ce28405be2aa895fd30ab534e7dcf09aeb433682efc1f94c33cf94bbf8eb94c0'
+  roles: USER
