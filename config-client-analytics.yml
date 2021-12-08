@@ -28,8 +28,8 @@ spring:
         order_updates: true
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres?currentSchema=analytics&binaryTransfer=true&reWriteBatchedInserts=true
-    username: postgres
-    password: admin
+    username: keycloak
+    password: keycloak
     driver-class-name: org.postgresql.Driver
     platform: postgres
 
