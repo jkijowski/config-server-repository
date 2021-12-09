@@ -17,7 +17,7 @@ elastic-query-web-client:
       -
         id: elastic-query-service-1
         host: localhost
-        port: 8183
+        port: 8189
 #      -
 #        id: elastic-query-service-2
 #        host: localhost

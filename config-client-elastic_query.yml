@@ -19,7 +19,7 @@ elastic-query-service:
     accept: ${elastic-query-service.webclient.accept-type}
 
 server:
-  port: 8183
+  port: 8189
   servlet:
     context-path: /elastic-query-service
 
