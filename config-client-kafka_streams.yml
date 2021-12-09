@@ -1,15 +1,14 @@
+kafka-streams-service:
 server:
   port: 8187
   servlet:
     context-path: /kafka-streams-service
 
-#spring:
-#  security:
-#    oauth2:
-#      resourceserver:
-#        jwt:
-#          issuer-uri: http://localhost:9091/auth/realms/microservices-realm
-#          jwk-set-uri: http://localhost:9091/auth/realms/microservices-realm/protocol/openid-connect/certs
+spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
 
 springdoc:
   api-docs:
