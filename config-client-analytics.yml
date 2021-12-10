@@ -5,15 +5,13 @@ server:
 
 analytics-service:
   version: v2
-#  custom-audience: analytics-service
 
 spring:
-#  security:
-#    oauth2:
-#      resourceserver:
-#        jwt:
-#          issuer-uri: http://localhost:9091/auth/realms/microservices-realm
-#          jwk-set-uri: http://localhost:9091/auth/realms/microservices-realm/protocol/openid-connect/certs
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+
   jpa:
     open-in-view: false
     show-sql: true
@@ -75,7 +73,6 @@ retry-config:
   maxAttempts: 3
   sleep-time-ms: 10000
 
-# for simplicity
 user-config: #test/test
   username: test
   password: '{cipher}ce28405be2aa895fd30ab534e7dcf09aeb433682efc1f94c33cf94bbf8eb94c0'
