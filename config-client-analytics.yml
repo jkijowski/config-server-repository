@@ -25,7 +25,7 @@ spring:
         order_inserts: true
         order_updates: true
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=analytics&binaryTransfer=true&reWriteBatchedInserts=true
+    url: jdbc:postgresql://${POSTGRES_HOST}:5432/postgres?currentSchema=analytics&binaryTransfer=true&reWriteBatchedInserts=true
     username: keycloak
     password: keycloak
     driver-class-name: org.postgresql.Driver
