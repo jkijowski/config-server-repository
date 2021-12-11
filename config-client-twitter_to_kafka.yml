@@ -3,10 +3,10 @@ server:
 
 twitter-to-kafka-service:
   twitter-keywords:
-    - Apple
-    - Banana
-    - Grape
-    - Orange
+    - yellow
+    - green
+    - blue
+    - black
   welcome-message: Hello microservices!
   enable-mock-tweets: true
   mock-min-tweet-length: 5
