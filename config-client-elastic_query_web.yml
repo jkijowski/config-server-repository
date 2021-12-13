@@ -29,3 +29,18 @@ user-config:
   username: test
   password: '{cipher}ce28405be2aa895fd30ab534e7dcf09aeb433682efc1f94c33cf94bbf8eb94c0'
   roles: USER
+
+security:
+  paths-to-ignore: /api-docs, /actuator/**
+
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure.include: health, prometheus
+      path-mapping.prometheus: metrics
+  endpoint:
+    health:
+      show-details: always
+    prometheus:
+      cache.time-to-live: 1ms
