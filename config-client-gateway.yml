@@ -73,6 +73,7 @@ spring:
     host: 127.0.0.1
     port: 6379
 
+
 management:
   endpoints:
     web:
@@ -84,3 +85,6 @@ management:
       show-details: always
     prometheus:
       cache.time-to-live: 1ms
+    gateway:
+      enabled: true
+
