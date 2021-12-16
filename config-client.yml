@@ -3,7 +3,7 @@ spring:
     config:
       allow-override: true
       override-none: true
-  sleuth:
-    sampler:
-      percentage: 1.0
-      probability: 1.0
+#  sleuth:
+#    sampler:
+#      percentage: 1.0
+#      probability: 1.0
