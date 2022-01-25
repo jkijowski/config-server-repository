@@ -17,7 +17,7 @@ kafka-config:
   num-partitions: 3
   replication-factor: 3
   bootstrap-servers: localhost:19092, localhost:29092, localhost:39092
-  schema-registry-servers: http://localhost:8081
+  schema-registry-servers: ${SCHEMA_REGISTRY_URL}
   sleep-time-ms: 1000
   max-interval-ms: 10000
   retry-multiplier: 2.0

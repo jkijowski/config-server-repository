@@ -55,7 +55,7 @@ management:
 kafka-config:
   bootstrap-servers: localhost:19092, localhost:29092, localhost:39092
   schema-registry-url-key: schema.registry.url
-  schema-registry-url: http://localhost:8081
+  schema-registry-url: ${SCHEMA_REGISTRY_URL}
   topic-name: twitter-analytics-topic
   topic-names-to-create:
     - twitter-analytics-topic
